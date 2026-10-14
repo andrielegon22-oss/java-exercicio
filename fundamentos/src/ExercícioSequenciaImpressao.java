@@ -18,15 +18,21 @@ public class ExercícioSequenciaImpressao {
         System.out.println("Digíte uma sequência de números");
         int numero = leitor.nextInt();
 
-        if (numero = % 2 == 0 ) {
-            System.out.println("o número" + numero );
-        } else {
-            System.out.println("Ainda tem menos que 18 anos...");
-        }
-
-        }
+        int maiorPar = 0;
+        int maiorImpar = 0;
 
         for (int contador = 1; contador <= numero; contador++) {
-            System.out.println(contador + " - ");
+
+            int auxiliar = 0;
+
+            if (contador % 2 == 0) {
+
+                auxiliar = contador * 2;
+                System.out.println((contador * 2) + " - ");
+            } else {
+                System.out.println((contador * 3) + " - ");
+            }
+        }
     }
-}
+
+    }
